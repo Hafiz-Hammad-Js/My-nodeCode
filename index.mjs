@@ -25,7 +25,7 @@ app.listen(PORT, () => {
     console.log("express is working on " + PORT+ " prot number....")
 
 })
-
+server.timeout = 30000;
 
 
 

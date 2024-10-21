@@ -4,7 +4,9 @@ dotenv.config({ path: './Secret/Secret.env' });
 
 // const DataBaseUrl = "mongodb://127.0.0.1:27017/myProtfolioDatabase"
 const hostDataBase =process.env.MONGODB_URI
-mongoose.connect(hostDataBase)
+mongoose.connect(hostDataBase,{
+    serverSelectionTimeoutMS: 30000,
+})
 
 const db = mongoose.connection
 
