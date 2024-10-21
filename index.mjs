@@ -21,7 +21,5 @@ app.listen(PROT, () => {
 })
 
 
-const jwtSecret = process.env.JWT_SECRET;
-console.log("me ",jwtSecret); // Accessed directly
 
 
