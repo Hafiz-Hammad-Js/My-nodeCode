@@ -9,12 +9,12 @@
     "routes": [
         {
             "src": "/api/(.*)",
-            "dest": "/index.mjs",
+            "dest": "/",
             "methods": ["GET", "POST", "PUT", "DELETE"]
         },
         {
             "src": "/(.*)",
-            "dest": "/index.mjs"
+            "dest": "/"
         }
     ]
 }
