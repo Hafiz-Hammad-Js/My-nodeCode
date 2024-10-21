@@ -4,7 +4,10 @@ dotenv.config({ path: './Secret/Secret.env' });
 
 // const DataBaseUrl = "mongodb://127.0.0.1:27017/myProtfolioDatabase"
 const hostDataBase =process.env.DB_Url
-mongoose.connect(hostDataBase)
+mongoose.connect(hostDataBase, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
 
 const db = mongoose.connection
 
