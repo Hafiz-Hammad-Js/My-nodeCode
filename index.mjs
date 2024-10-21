@@ -15,7 +15,7 @@ app.use(cors({
 app.use('/api', Router)
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('https://www.youtube.com/watch?v=IeM1PGqmJT4');
 });
 
 const PORT =process.env.PORT || 3000
