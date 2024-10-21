@@ -17,7 +17,7 @@ Router.post('/AboutPostWork', async (req, res) => {
 })
 
 
-Router.get("/AboutGetWork", async (req, res) => {
+Router.get("/get", async (req, res) => {
     try {
         const dataFind = await AboutSchema.find()
         console.log("About data get", dataFind)
