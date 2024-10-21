@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use(cors({
     origin: '*',
 }));
-app.use('/', Router)
+app.use('/api', Router)
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
