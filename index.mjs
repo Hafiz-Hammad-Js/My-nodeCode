@@ -12,11 +12,11 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/', Router)
 
-const PROT =process.env.PROT || 3000
+const PORT =process.env.PORT || 3000
 
-app.listen(PROT, () => {
+app.listen(PORT, () => {
 
-    console.log("express is working on " + PROT+ " prot number....")
+    console.log("express is working on " + PORT+ " prot number....")
 
 })
 
