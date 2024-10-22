@@ -3,7 +3,7 @@ import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken";
 import dotenv from 'dotenv';
 dotenv.config({ path: './Secret/Secret.env'});
-
+const jwtSecret = process.env.JWT_SECRET;
 
 const { Schema } = mongoose
 
