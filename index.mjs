@@ -8,10 +8,13 @@ dotenv.config({ path: './Secret/Secret.env' });
 
 const app = express()
 
+
 app.use(bodyParser.json())
 app.use(cors({
     origin: '*',
 }));
+
+
 app.use('/api', Router)
 
 app.get('/', (req, res) => {
